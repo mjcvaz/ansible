@@ -12,8 +12,8 @@
 infobloxgm ansible_host=1.2.3.4
 
 [infoblox:vars]
-ansible_user={{ my_user }}
-ansible_ssh_password={{ my_pass }}
+ansible_user={{ infoblox_username }}
+ansible_ssh_password={{ infoblox_password }}
 
 [teste]
 site1 ansible_host=10.100.1.254
@@ -24,8 +24,8 @@ site5 ansible_host=10.100.5.254
 
 [teste:vars]
 ansible_connection=network_cli
-ansible_user={{ my_user }}
-ansible_ssh_password={{ my_pass }}
+ansible_user={{ cisco_username }}
+ansible_ssh_password={{ cisco_password }}
 ansible_network_os=ios   
 
 # ===================== EXEMPLOS =================================
