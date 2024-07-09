@@ -14,4 +14,18 @@ Para voltar a aceder ao ficheiro usamos o mesmo comando mas com a flag edit em v
 Os ficheiros de inventário podem ter dois formatos, ini ou yaml.  
 Por defeito temos o ficheiro "ini" ***"/etc/ansible/hosts"*** mas podemos criar outros com o formato que preferirmos e onde quisermos.
 
+## Em construção
+
+### Comandos para de playbooks:
+#### Comando para verificar a syntax de um playbook.
+***ansible-playbook --syntax-check playbook.yml***  
+#### Comando para executar um playbook utilizando o inventário hosts.
+***ansible-playbook -i hosts playbook.yml***  
+#### Comando para executar um playbook utilizando o inventário hosts com as credenciais guardadas no vault.
+***ansible-playbook -i hosts playbook.yml --ask-vault-pass***  
+#### Comando para executar um playbook com debug.
+***ansible-playbook -i hosts playbook.yml --vvv***  
+#### Comando para executar um playbook com debug.
+***ANSIBLE_DEBUG=1 ansible-playbook -i hosts --ask-vault-pass playbook.yml --vvv***  
+
 ###
