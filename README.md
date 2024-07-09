@@ -1,5 +1,9 @@
 # Instruções para usar Ansible
 
+### Editar o ficheiro ***/etc/ansible/ansible.cfg*** para alterar ou adicionar algumas configurações.
+Descomentar (retirar o caratér ; ou # do inicío da linha) a linha ***host_key_checking=False***.  
+Este ficheiro permite fixar todas as configurações do ansible.
+
 ### Criar um ficheiro secrets.yml para guardar os users e passwords dos ambientes que queremos gerir.
 Para criar o ficeiro é usado este comando que nos vai pedir a criação de um password para aceder ao ficheiro que vai ficar encriptado:  
 ***ansible-vault create group_vars/secrets.yml***  
